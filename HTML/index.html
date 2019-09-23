@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,59 @@
     <title>To Do List</title>
 
     <!--Link to the BootStrap CSS File-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--Loading our own CSS file after Bootstrap so our styles are applied last-->
-     <link rel="stylesheet" href="../CSS/toDoList.css">
+    <link rel="stylesheet" href="../CSS/toDoList.css">
 
 </head>
+
 <body>
 
-<!--
+    <!--
     *HeaderText
     * 3 paragraphs for instructions
     * Input for to-do items
     * Submit button 
     *Somewhere to display the to do list items 
 -->
-<!--Loading JQuery, Popper.js,Bootstrap Js-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!-- Loading our custom JS-->
-    <script type ="text/javascript" src="../JavaScript/toDoList.js"></script>
+
+    <!--Div with the Bootstrap class container-->
+    <div class="Container">
+        <!-- One row within our container-->
+        <div class="row">
+            <!-- This div will take up all 12 columns in one row-->
+            <div class="col-12">
+                <h1> MY To-Do List</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>Enter what you need to do into the inout field and hit submit to add items to your list</p>
+                <p>Click the item to mark it as complete</p>
+                <p> Click the "X" to remove the item from your to-do list.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <input type="texr"
+                placeholder="What do you need to do">
+                <input type="Submit">
+            </div>
+        </div>
+    </div>
+    <!--Loading JQuery, Popper.js,Bootstrap Js-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- Loading our custom JS-->
+    <script type="text/javascript" src="../JavaScript/toDoList.js"></script>
 </body>
+
 </html>
