@@ -49,3 +49,44 @@ input {
      background-color: lightsteelblue;
  }
 
+/* Styles for the ul and lis */
+
+ul {
+    margin-top: 20px;
+    text-align:left;
+}
+
+li {
+    list-style: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: blue;
+    font-weight: bold;
+    transition: all 0.75s ease;
+    /*Webkit, for safari and opera */
+    -webkit-transition: all 0.75s ease;
+    /*Mozilla, for firefox */
+    -moz-transition: all 0.75s ease;
+    /* Opera */
+    -o-transition: all 0.75s ease;
+
+}
+
+
+
+
+li:hover{
+    background-color: red;
+}
+/* Styles for when a list item is marked done */
+
+.done {
+    background-color: green !important;
+} 
+ /* Hides the item on the list when the x is clicked */
+.delete {
+    display: none;
+}
